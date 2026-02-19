@@ -1,33 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>Meine App</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Kostenlose Desktop App für Windows und Mac">
+  <title>Nifi Probe – Rechnungen automatisch erstellen</title>
+  <meta name="description" content="Nifi Probe ist eine kostenlose Desktop-App für Windows und Mac. Kundendaten einmal eingeben und Rechnungen automatisch wiederverwenden. Ideal für Selbstständige und kleine Unternehmen.">
+  <meta name="keywords" content="Rechnungssoftware kostenlos, Rechnung erstellen Windows, Rechnung Mac App, Desktop Rechnungsprogramm, Nifi Probe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
+      background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
       color: white;
       text-align: center;
-      padding: 50px;
     }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 40px;
+    }
+
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border: 1px solid #444;
-      text-decoration: none;
+      margin: 15px;
+      padding: 15px 30px;
+      background: #1f1f1f;
+      border: 1px solid #333;
       color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      transform: translateY(0);
+    }
+
+    .btn:hover {
+      background: #2a2a2a;
+      transform: translateY(-3px);
+    }
+
+    .section {
+      margin-top: 100px;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+
+    .features {
+      margin-top: 30px;
+      text-align: left;
+      display: inline-block;
+    }
+
+    .feature {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-<body>
-  <h1>Meine App</h1>
-  <p>Kostenlose Desktop App für Windows & Mac</p>
 
-  <a class="btn" href="https://github.com/nifi-Probe/nifi-Probe.github.io/releases/download/v1.0/Invoice-Management-System.exe">Download Windows</a>
-  <a class="btn" href="#">Download Mac</a>
+<body>
+
+<div class="container">
+
+  <h1>Nifi Probe</h1>
+  <p>Kundendaten einmal eingeben – Rechnungen automatisch wiederverwenden.</p>
+
+  <div class="buttons">
+    <a class="btn" href="https://github.com/nifi-Probe/nifi-Probe.github.io/releases/download/v1.0/Invoice-Management-System.exe" download>⬇ Download für Windows</a>
+    <a class="btn" href="HIER-MAC-LINK-EINFÜGEN" download>⬇ Download für Mac</a>
+  </div>
+
+  <p>Version 1.0 • Kostenlos • Offline nutzbar</p>
+
+  <div class="section">
+    <h2>Effiziente Rechnungssoftware für Selbstständige</h2>
+    <div class="features">
+      <div class="feature">✔ Kundendaten nur einmal erfassen</div>
+      <div class="feature">✔ Wiederkehrende Rechnungen in Sekunden erstellen</div>
+      <div class="feature">✔ Ideal für kleine Unternehmen</div>
+      <div class="feature">✔ Keine Cloud – volle Kontrolle über deine Daten</div>
+      <div class="feature">✔ Kostenlos für Windows & Mac</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Installation</h2>
+    <p><strong>Windows:</strong> Bei Sicherheitswarnung „Weitere Informationen“ → „Trotzdem ausführen“ klicken.</p>
+    <p><strong>Mac:</strong> Rechtsklick → Öffnen → Bestätigen.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Nifi Probe • Kostenlose Rechnungssoftware Desktop
+</footer>
 
 </body>
 </html>
